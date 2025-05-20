@@ -16,7 +16,7 @@ Network traffic classification is a fundamental task in cybersecurity and networ
 
 ## 📦 Dataset
 
-- **Name**: TII-SSRC-23: A Comprehensive Smart Home Network Traffic Dataset  
+- **Name**: TII-SSRC-23: Network traffic for intrusion detection research. The TII-SSRC-23 dataset offers a comprehensive collection of network traffic patterns, meticulously compiled to support the development and research of Intrusion Detection Systems (IDS). It presents a dual structure: one part provides a tabular representation of extracted features in CSV format, while the other offers raw network traffic data for each type of traffic in PCAP files.  
 - **Source**: [Kaggle Dataset Link](https://www.kaggle.com/datasets/daniaherzalla/tii-ssrc-23?resource=download)  
 - **Format**: CSV
 
@@ -72,7 +72,7 @@ import pickle
 ```
 Alternatively, you can use environments like **JupyterLab**, **Google Colab**, or **Anaconda** that come with these packages pre-installed.
 
-## 📊 Example Output
+## 📊 Output
 
 Sample evaluation metrics, confusion matrix, and data visualizations are generated in the notebook to provide insights into model performance and traffic pattern recognition.
 
@@ -80,14 +80,4 @@ Sample evaluation metrics, confusion matrix, and data visualizations are generat
 
 - The dataset may be large; ensure sufficient memory before running the notebook.
 - Running the entire notebook may take some time depending on the hardware and model complexity.
-
-## 📄 License
-
-This project is for academic and research purposes. Please review the license terms on the original [Kaggle dataset page](https://www.kaggle.com/datasets/daniaherzalla/tii-ssrc-23?resource=download) for data usage permissions.
-
----
-
-## 👩‍💻 Author
-
-*Created by [Your Name]*  
-If you found this helpful, feel free to ⭐ star the repository!
+- This current model takes 100,000 rows as sample_input instead of whole dataset as the TII-SSRC-23 dataset is too large for the model to process 
