@@ -33,7 +33,7 @@ Example:
 
 ```python
 # Replace this:
-df = pd.read_csv("path/to/tii-ssrc-23.csv")
+df = pd.read_csv("C:\\\\Users\\\\vansh\\\\Downloads\\\\INTEL-CIC-DIS-2017-18-main\\\\data.csv\")
 
 # With your local path:
 df = pd.read_csv("your/path/here/tii-ssrc-23.csv")
@@ -51,12 +51,25 @@ df = pd.read_csv("your/path/here/tii-ssrc-23.csv")
 
 ## 🛠️ Requirements
 
-To run the notebook, install the following Python packages:
+To run the notebook, install the following Python packages and libraries:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
-```
+#install package
+pip install graphviz
 
+#install libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+import warnings
+import pickle
+```
 Alternatively, you can use environments like **JupyterLab**, **Google Colab**, or **Anaconda** that come with these packages pre-installed.
 
 ## 📊 Example Output
